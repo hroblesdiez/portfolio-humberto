@@ -32,8 +32,8 @@ const HomeAnimation = () => {
               <div className='mt-4'>
                 <Link to='contact'><Button text='Contact me' /></Link>
                 <div className='flex justify-center lg:justify-start space-x-4 mt-8'>
-                  <a href="https://github.com/hroblesdiez" target="_blank"><FaGithub className='text-3xl fill-[#000] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100'/></a>
-                  <a href="https://www.linkedin.com/in/humberto-robles/" target="_blank"><FaLinkedin className='text-3xl fill-[#004182] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100'/></a>
+                  <a href="https://github.com/hroblesdiez" target="_blank" rel="noreferrer"><FaGithub className='text-3xl fill-[#000] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100'/></a>
+                  <a href="https://www.linkedin.com/in/humberto-robles/" target="_blank" rel="noreferrer"><FaLinkedin className='text-3xl fill-[#004182] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100'/></a>
                 </div>
               </div>
           </div>

@@ -80,7 +80,7 @@ import projectsImages from "../../assets/projectsImages"
     image: projectsImages.portfolio,
     desc: 'Humberto\'s portfolio',
     pathDemo: 'https://portfolio-humberto.netlify.app/',
-    pathGitHub: 'https://github.com/hroblesdiez/portfolio',
+    pathGitHub: 'https://github.com/hroblesdiez/portfolio-humberto',
   },
 
 ]
