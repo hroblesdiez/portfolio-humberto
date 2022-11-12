@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 const HomeAnimation = () => {
 
   return (
-    <div className='h-[calc(100vh-6rem)]' name='home'>
+    <div className='h-[100vh]' name='home'>
       <div className='container max-w-6xl mx-auto px-4 md:px-10 py-4 h-full mb-8 md:mb-12 lg:mb-20'>
         <div className="flex flex-col items-center justify-start h-full gap-4 md:flex-row md:justify-between">
           <div className="flex flex-col items-center gap-4 md:items-start">
@@ -38,7 +38,7 @@ const HomeAnimation = () => {
               </div>
           </div>
           <div className="flex justify-center w-full md:w-1/2">
-              <div className='w-96 min-h-96 md:w-full md:min-h-full'>
+              <div className='min-h-96 max-w-[75%] md:min-h-full'>
                 <Lottie
                   loop
                   animationData={lottieJson}
