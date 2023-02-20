@@ -5,28 +5,27 @@
     <link rel="icon" href="%PUBLIC_URL%/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Humberto's Portfolio"
-    />
+    <meta name="description" content="Humberto's Portfolio" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Humberto's Portfolio</title>
   </head>
   <body>
-
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">   <form name="contact"  netlify netlify-honeypot="bot-field" hidden>
-      <input labelFor="name" label="Name" type="text" name="name" placeholder="Your name" />
-      <input labelFor="email" label="Email" type="email" name="email" placeholder="Your email" />
-      <input labelFor="subjet" label="Subject" type="text" name="subject" placeholder="Subject" />
-      <textarea labelFor="message" label="Message" name="message" placeholder="Your message"
-      rows="5" />
-    </form></div>
 
+    <div id="root">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="text" name="subject" />
+        <textarea name="message" />
+      </form>
+    </div>
   </body>
 </html>
