@@ -5,9 +5,9 @@ import SectionTitle from "../General/SectionTitle";
 import ContactInfo from "./ContactInfo";
 import ContactFormInput from "./ContactFormInput";
 import Button from "../General/Button";
-import ContactSuccess from "./ContactSuccess";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import ContactSuccess from "./ContactSuccess";
+//import { useState } from "react";
+//import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   // const [isSubmitted, setIsSubmitted] = useState(false);
