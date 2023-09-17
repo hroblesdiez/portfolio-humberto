@@ -5,24 +5,10 @@ import SectionTitle from "../General/SectionTitle";
 import ContactInfo from "./ContactInfo";
 import ContactFormInput from "./ContactFormInput";
 import Button from "../General/Button";
-//import ContactSuccess from "./ContactSuccess";
-//import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
-  // const [isSubmitted, setIsSubmitted] = useState(false);
-  // const navigate = useNavigate();
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitted(true);
-  //   navigate("/");
-  //   const inputsForm = document.querySelectorAll("form input,textarea");
-  //   inputsForm.forEach((input) => (input.value = ""));
-  // };
-
   return (
-    <div className="w-full px-8" name="contact">
+    <div className="w-full px-8" name="contact" id="contact">
       <div className="px-4 md:px-10 lg:px-36 py-8 md:mt-0 mb-8 md:mb-12 lg:mb-20 max-w-[900px] mx-auto bg-white rounded-lg">
         <SectionTitle icon={<MdContactMail size="28" />} text="Contact" />
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 px-4 sm:px-0">

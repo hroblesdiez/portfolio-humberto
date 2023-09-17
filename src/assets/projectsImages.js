@@ -8,18 +8,22 @@ import sprystore from "./sprystore.png";
 import expenses from "./expenses.png";
 import portfolio from "./portfolio.png";
 import gutblocks from "./gut-blocks.png";
+import banner_blog from "./banner_blog.jpg";
+import model from "./model.png";
 
 const projectsImages = {
-    library,
-    dogger,
-    medical,
-    nicePictures,
-    recipes,
-    shopping,
-    sprystore,
-    expenses,
-    portfolio,
-    gutblocks,
+  library,
+  dogger,
+  medical,
+  nicePictures,
+  recipes,
+  shopping,
+  sprystore,
+  expenses,
+  portfolio,
+  gutblocks,
+  banner_blog,
+  model,
 };
 
 export default projectsImages;
