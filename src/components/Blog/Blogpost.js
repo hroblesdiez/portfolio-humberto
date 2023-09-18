@@ -8,6 +8,7 @@ import projectsImages from "../../assets/projectsImages";
 import { BsCalendar3 } from "react-icons/bs";
 import { FaUserSecret, FaGithub, FaEye } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
 export default function Blogpost() {
   const { slug } = useParams();
@@ -40,6 +41,7 @@ export default function Blogpost() {
             <div className="flex items-center space-x-4">
               <a
                 href={post.netlify}
+                rel="noreferrer"
                 target="_blank"
                 className="flex justify-start items-center w-auto p-0 text-sm"
               >
@@ -47,6 +49,7 @@ export default function Blogpost() {
               </a>
               <a
                 href={post.github}
+                rel="noreferrer"
                 target="_blank"
                 className="flex justify-start items-center w-auto p-0 text-sm"
               >
@@ -56,7 +59,9 @@ export default function Blogpost() {
           </ul>
           <p className="">{post.description}</p>
         </div>
-        <ReactMarkdown className="w-full mb-10">{post.content}</ReactMarkdown>
+        <ReactMarkdown className="w-full mb-10 prose prose-h4:text-[1.15rem] prose-a:no-underline prose-a:not-italic prose-p:cursor-default">
+          {post.content}
+        </ReactMarkdown>
       </div>
     );
   };
@@ -77,9 +82,11 @@ export default function Blogpost() {
           alt="Blog"
           className="w-full max-h-[250px] object-cover"
         />
-        <h2 className="absolute left-[45%] top-[45%] font-nunito font-bold text-4xl text-white text-center">
-          Blog
-        </h2>
+        <Link to="/blog">
+          <h2 className="absolute left-[45%] top-[45%] font-nunito font-bold text-4xl text-white text-center">
+            Blog
+          </h2>
+        </Link>
       </div>
       {renderPost()}
       <Footer />

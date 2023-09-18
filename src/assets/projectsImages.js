@@ -1,29 +1,35 @@
-import library from "./library.png";
-import dogger from "./dogger.png";
-import medical from "./medical-house.png";
 import nicePictures from "./nice-pictures.png";
 import recipes from "./recipes.png";
 import shopping from "./shopping.png";
-import sprystore from "./sprystore.png";
 import expenses from "./expenses.png";
 import portfolio from "./portfolio.png";
-import gutblocks from "./gut-blocks.png";
 import banner_blog from "./banner_blog.jpg";
-import model from "./model.png";
+import about from "./about.jpg";
+import oze from "./oze.png";
+import apigus from "./apigus.png";
+import optical_radar_images from "./optical_radar_images.png";
+import powerplants from "./powerplants.png";
+import sql from "./sql.png";
+import bicilink from "./bicilink.png";
+import handball from "./handball.png";
+import mapa_geologico from "./mapa_geologico.png";
 
 const projectsImages = {
-  library,
-  dogger,
-  medical,
   nicePictures,
   recipes,
   shopping,
-  sprystore,
   expenses,
   portfolio,
-  gutblocks,
   banner_blog,
-  model,
+  about,
+  oze,
+  apigus,
+  optical_radar_images,
+  powerplants,
+  sql,
+  bicilink,
+  handball,
+  mapa_geologico,
 };
 
 export default projectsImages;

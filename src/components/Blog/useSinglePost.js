@@ -12,6 +12,7 @@ export default function useSinglePost(slug) {
       setPost(result[0].fields);
       setLoading(false);
     });
+    // eslint-disable-next-line
   }, []);
   return [post, isLoading];
 }

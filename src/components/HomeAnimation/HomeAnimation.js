@@ -1,6 +1,6 @@
 import Lottie from "react-lottie-player";
 import Typewriter from "typewriter-effect";
-import lottieJson from "../../assets/coding.json";
+import lottieJson from "../../assets/database.json";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../General/Button";
 import { Link } from "react-scroll";
@@ -28,7 +28,10 @@ const HomeAnimation = () => {
             <div className="text-2xl text-title text-center md:text-left">
               <Typewriter
                 options={{
-                  strings: ["I'm a GIS Analyst", "and Front-End Developer"],
+                  strings: [
+                    "I'm a GIS Analyst",
+                    "and PostgreSQL/PostGIS apprentice",
+                  ],
                   autoStart: true,
                   loop: true,
                   delay: 60,
@@ -38,24 +41,17 @@ const HomeAnimation = () => {
                 }}
               />
             </div>
-            <div className="mt-4">
+            <div className="mt-4 flex items-center">
               <Link to="contact">
                 <Button text="Contact me" />
               </Link>
-              <div className="flex justify-center lg:justify-start space-x-4 mt-8">
+              <div className="flex justify-center lg:justify-start ml-6">
                 <a
                   href="https://github.com/hroblesdiez"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FaGithub className="text-3xl fill-[#000] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/humberto-robles/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedin className="text-3xl fill-[#004182] opacity-75 transition-opacity duration-300 ease-in cursor-pointer hover:opacity-100" />
                 </a>
               </div>
             </div>

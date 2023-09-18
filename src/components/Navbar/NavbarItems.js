@@ -1,7 +1,7 @@
 import Navbaritem from "./Navbaritem";
 
 const NavbarItems = ({ classNameUl, classNameLi, item, onClick }) => {
-  const ITEMS = ["Home", "About", "Skills", "Projects", "Blog", "Contact"];
+  const ITEMS = ["Home", "About", "Projects", "Blog", "Contact"];
 
   return (
     <ul className={classNameUl}>

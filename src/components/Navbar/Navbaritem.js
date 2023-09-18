@@ -13,7 +13,11 @@ const Navbaritem = ({ item, classNameLi, onClick }) => {
 
   return (
     <li>
-      {item === "Blog" && <NavLink to="/blog">{item}</NavLink>}
+      {item === "Blog" && (
+        <NavLink className={classNameLi} to="/blog">
+          {item}
+        </NavLink>
+      )}
 
       {item !== "Blog" && (
         <HashLink

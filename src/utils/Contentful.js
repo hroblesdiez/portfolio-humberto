@@ -20,6 +20,21 @@ const fetchAllBlogPosts = async () => {
   }
 };
 
+const fetchLastThreeBlogPosts = async () => {
+  try {
+    const entries = await client
+      .getEntries({
+        content_type: "blog",
+        limit: 3,
+        order: "-fields.date",
+      })
+      .then((response) => response.items);
+    return entries;
+  } catch (error) {
+    console.log(`Error fetching posts: ${error}`);
+  }
+};
+
 const fetchSinglePost = async (slug) => {
   try {
     const singlePost = await client
@@ -34,4 +49,4 @@ const fetchSinglePost = async (slug) => {
   }
 };
 
-export { fetchAllBlogPosts, fetchSinglePost };
+export { fetchAllBlogPosts, fetchLastThreeBlogPosts, fetchSinglePost };

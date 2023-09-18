@@ -1,69 +1,71 @@
 import skillsImages from "../../assets/skillsImages";
 
-const skills1 = [
+const skills = [
   {
     id: 1,
-    name: "Html",
-    image: skillsImages.html,
+    name: "QGIS",
+    image: skillsImages.qgis,
   },
   {
     id: 2,
-    name: "Css",
-    image: skillsImages.css,
+    name: "ArcGIS",
+    image: skillsImages.arcgis,
   },
   {
     id: 3,
-    name: "Sass",
-    image: skillsImages.sass,
+    name: "PostgreSQL",
+    image: skillsImages.postgresql,
   },
   {
     id: 4,
-    name: "Tailwind",
-    image: skillsImages.tailwind,
+    name: "PostGIS",
+    image: skillsImages.postgis,
   },
   {
     id: 5,
-    name: "Bootstrap",
-    image: skillsImages.bootstrap,
-  },
-  {
-    id: 6,
     name: "Python",
     image: skillsImages.python,
   },
-];
-
-export const skills2 = [
   {
-    id: 1,
+    id: 6,
     name: "Javascript",
     image: skillsImages.javascript,
   },
   {
-    id: 2,
-    name: "React",
-    image: skillsImages.react,
-  },
-  {
-    id: 3,
-    name: "Php",
-    image: skillsImages.php,
-  },
-  {
-    id: 4,
+    id: 7,
     name: "MySQL",
     image: skillsImages.mysql,
   },
   {
-    id: 5,
-    name: "Webpack",
-    image: skillsImages.webpack,
+    id: 8,
+    name: "SQL Server",
+    image: skillsImages.sqlserver,
   },
   {
-    id: 6,
-    name: "Postgre",
-    image: skillsImages.postgre,
+    id: 9,
+    name: "React",
+    image: skillsImages.react,
+  },
+  {
+    id: 10,
+    name: "HTML",
+    image: skillsImages.html,
+  },
+  {
+    id: 11,
+    name: "Css",
+    image: skillsImages.css,
+  },
+  {
+    id: 12,
+    name: "AutoCAD",
+    image: skillsImages.autocad,
+  },
+  {
+    id: 13,
+    name: "MicroStation",
+    image: skillsImages.microstation,
   },
 ];
 
-export default skills1;
+export default skills;

@@ -15,13 +15,13 @@ export default function Blog() {
     if (isLoading) return <p>Loading...</p>;
     return posts.map((post) => (
       <Link
-        className="relative flex flex-col justify-start border-none break-words rounded-[0.25rem] md:flex-50 lg:max-w-[50%] lg:flex-33 lg:max-w-[33%] w-full shadow-xl mx-4 group overflow-hidden"
+        className="relative flex flex-col justify-start border-none break-words rounded-[0.25rem] md:flex-50 lg:max-w-[50%] lg:flex-33 lg:max-w-[33%] w-full shadow-xl mx-4 my-4 group overflow-hidden"
         key={post.sys.id}
         to={post.fields.slug}
       >
-        <div className="relative rounded-t-[calc(0.25rem-1px)] p-0 mb-0 bg-[0,0,0,0.03]">
+        <div className="relative rounded-t-[calc(0.25rem-1px)] p-0 mb-0 bg-[0,0,0,0.03] h-64">
           <img
-            className="posts__post__img__container__img group-hover:scale-110 transition-all ease-in duration-300"
+            className="posts__post__img__container__img group-hover:scale-110 transition-all ease-in duration-300 h-full object-cover"
             src={post.fields.image[0].fields.file.url}
             alt={post.fields.title}
           />
@@ -65,11 +65,13 @@ export default function Blog() {
             alt="Blog"
             className="w-full max-h-[250px] object-cover"
           />
-          <h2 className="absolute left-[45%] top-[45%] font-nunito font-bold text-4xl text-white text-center">
-            Blog
-          </h2>
+          <Link to="/blog">
+            <h2 className="absolute left-[45%] top-[45%] font-nunito font-bold text-4xl text-white text-center">
+              Blog
+            </h2>
+          </Link>
         </div>
-        <div className="py-10 px-6 flex flex-wrap justify-between">
+        <div className="py-10 px-6 flex flex-wrap justify-evenly">
           {renderPosts()}
         </div>
       </div>

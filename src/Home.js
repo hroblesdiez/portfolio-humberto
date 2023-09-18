@@ -2,9 +2,9 @@ import About from "./components/About/About";
 import HomeAnimation from "./components/HomeAnimation/HomeAnimation";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import BlogHome from "./components/Blog/BlogHome";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <HomeAnimation />
       <About />
-      <Skills />
+      <BlogHome />
       <Projects />
       <Contact />
       <Footer />
