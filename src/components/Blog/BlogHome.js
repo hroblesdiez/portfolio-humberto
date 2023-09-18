@@ -15,7 +15,7 @@ export default function BlogHome() {
       <Link
         className="relative flex flex-col justify-start border-none break-words rounded-[0.25rem] md:flex-50 lg:max-w-[50%] lg:flex-33 lg:max-w-[33%] w-full shadow-xl mx-4 my-4 group overflow-hidden"
         key={post.sys.id}
-        to={"/blog/" + post.fields.slug}
+        to={post.fields.slug}
       >
         <div className="relative rounded-t-[calc(0.25rem-1px)] p-0 mb-0 bg-[0,0,0,0.03]">
           <img
