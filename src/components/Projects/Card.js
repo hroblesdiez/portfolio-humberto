@@ -2,6 +2,13 @@ import { FaEye, FaGithub } from "react-icons/fa";
 
 const Card = ({ item, pathDemo, pathGitHub }) => {
   const { title, image, desc } = item;
+  const notShow = [
+    "Coolfood",
+    "Optical vs Radar Optical Satelite Images",
+    "Web scrapping and Python analysis",
+    "Power BI analysis",
+    "The Power of PostgreSQL + PostGIS",
+  ];
   return (
     <div className="relative shadow-lg shadow-bg2 group rounded-xl max-w-[250px] min-h-[350px] flex-[45%] mb-12 md:mx-2">
       <div
@@ -23,7 +30,7 @@ const Card = ({ item, pathDemo, pathGitHub }) => {
               <span className="text-lg text-white font-semibold">{desc}</span>
             </div>
             <div className="flex justify-center pt-8 text-center space-x-3 cursor-pointer text-white">
-              {title !== "Gutenberg block" && (
+              {notShow.indexOf(title) === -1 && (
                 <a
                   href={pathDemo}
                   target="_blank"
@@ -33,14 +40,16 @@ const Card = ({ item, pathDemo, pathGitHub }) => {
                   <FaEye size={32} />
                 </a>
               )}
-              <a
-                href={pathGitHub}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-primary transition-colors duration-300 ease-in"
-              >
-                <FaGithub size={32} />
-              </a>
+              {title !== "Geologic map" && (
+                <a
+                  href={pathGitHub}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary transition-colors duration-300 ease-in"
+                >
+                  <FaGithub size={32} />
+                </a>
+              )}
             </div>
           </div>
         </div>

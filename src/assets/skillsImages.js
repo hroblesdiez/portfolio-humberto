@@ -1,25 +1,31 @@
-import bootstrap from './bootstrap.svg';
-import css from './css-alt.svg';
-import html from './html.svg';
-import javascript from './javascript.svg';
-import mysql from './mysql.svg';
-import php from './php.svg';
-import react from './react.svg';
-import sass from './sass.svg';
-import tailwind from './tailwind-css.svg';
-import webpack from './webpack.svg';
+import sqlserver from "./sqlserver.svg";
+import css from "./css-alt.svg";
+import html from "./html.svg";
+import javascript from "./javascript.svg";
+import mysql from "./mysql.svg";
+import react from "./react.svg";
+import arcgis from "./arcgis.svg";
+import qgis from "./qgis.svg";
+import postgis from "./postgis.png";
+import python from "./python.svg";
+import postgresql from "./postgresql.svg";
+import autocad from "./autocad.svg";
+import microstation from "./microstation.svg";
 
 const skillImages = {
-  bootstrap,
-  css,
-  html,
-  javascript,
+  qgis,
+  arcgis,
+  postgresql,
+  postgis,
+  python,
   mysql,
-  php,
+  sqlserver,
+  javascript,
   react,
-  sass,
-  tailwind,
-  webpack,
-}
+  autocad,
+  microstation,
+  html,
+  css,
+};
 
-export default skillImages
+export default skillImages;
