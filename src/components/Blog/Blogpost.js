@@ -20,7 +20,7 @@ export default function Blogpost() {
 
     return (
       <div className="lg:max-w-[50%] lg:flex-50 flex flex-col items-center mx-auto mt-20">
-        <div className="w-full mb-6">
+        <div className="w-4/5 lg:w-full mb-6">
           <img
             className="object-cover w-full max-w-full rounded-lg block"
             src={post.image[0].fields.file.url}
@@ -59,7 +59,7 @@ export default function Blogpost() {
           </ul>
           <p className="">{post.description}</p>
         </div>
-        <ReactMarkdown className="w-full mb-10 prose prose-h4:text-[1.15rem] prose-a:no-underline prose-a:not-italic prose-p:cursor-default">
+        <ReactMarkdown className="w-4/5 lg:w-full mb-10 prose prose-h4:text-[1.15rem] prose-a:no-underline prose-a:not-italic prose-p:cursor-default">
           {post.content}
         </ReactMarkdown>
       </div>
