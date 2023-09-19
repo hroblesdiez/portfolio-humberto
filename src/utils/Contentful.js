@@ -1,9 +1,9 @@
 import { createClient } from "contentful";
 
 const client = createClient({
+  environment: "master",
   space: process.env.REACT_APP_CONTENTFUL_APP_DEF_ID,
   accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
-  environment: "master",
 });
 
 const fetchAllBlogPosts = async () => {

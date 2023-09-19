@@ -1,7 +1,7 @@
 import Lottie from "react-lottie-player";
 import Typewriter from "typewriter-effect";
 import lottieJson from "../../assets/database.json";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Button from "../General/Button";
 import { Link } from "react-scroll";
 
