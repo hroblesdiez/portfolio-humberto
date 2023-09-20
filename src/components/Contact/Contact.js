@@ -35,12 +35,7 @@ const Contact = () => {
             />
           </div>
           <div className="w-full">
-            <form
-              name="contact"
-              //action="/contact/success"
-              method="POST"
-              //onSubmit={handleSubmit}
-            >
+            <form name="contact" method="POST">
               <input type="hidden" name="form-name" value="contact" />
               <ContactFormInput
                 element="input"
@@ -80,7 +75,6 @@ const Contact = () => {
               <div data-netlify-recaptcha="true"></div>
               <Button type="submit" text="Submit" />
             </form>
-            {/* {isSubmitted && <ContactSuccess />} */}
           </div>
         </div>
       </div>
