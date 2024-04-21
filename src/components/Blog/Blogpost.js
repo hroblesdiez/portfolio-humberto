@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import readableDate from "../../utils/readableDate";
 import projectsImages from "../../assets/projectsImages";
 import { BsCalendar3 } from "react-icons/bs";
-import { FaUserSecret, FaGithub, FaEye } from "react-icons/fa";
+import { FaUserSecret } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 
