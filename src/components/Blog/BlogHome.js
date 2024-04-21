@@ -57,7 +57,7 @@ export default function BlogHome() {
     <div id="blog">
       <div className="posts__container">
         <SectionTitle icon={<FaBlogger size="28" />} text="Blog" />
-        <div className="pb-40 px-6 flex flex-wrap justify-between">
+        <div className="pb-40 px-6 flex flex-wrap justify-evenly">
           {renderPosts()}
         </div>
       </div>

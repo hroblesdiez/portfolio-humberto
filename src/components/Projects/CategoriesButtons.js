@@ -1,15 +1,10 @@
 const CategoriesButtons = ({ onclick, isActive }) => {
   const categories = [
     { id: "1", name: "All" },
-    { id: "2", name: "PostgreSQL/PostGIS" },
-    { id: "3", name: "QGIS" },
-    { id: "4", name: "SQL" },
-    { id: "5", name: "Python" },
-    { id: "6", name: "Javascript" },
-    { id: "7", name: "React JS" },
-    { id: "8", name: "Rest API" },
-    { id: "9", name: "Power BI" },
-    { id: "10", name: "MicroStation" },
+    { id: "2", name: "GIS" },
+    { id: "3", name: "Web GIS App" },
+    { id: "4", name: "Data Analysis" },
+    { id: "5", name: "Cartography" },
   ];
 
   return (

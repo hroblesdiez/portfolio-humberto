@@ -1,5 +1,6 @@
 import projectsImages from "../../assets/projectsImages";
 import { GiSwordman } from "react-icons/gi";
+import { VscCheck } from "react-icons/vsc";
 import SectionTitle from "../General/SectionTitle";
 import skills from "../Skills/skillsList";
 
@@ -12,33 +13,62 @@ const About = () => {
           <div className="w-full h-full md:w-[40%] mb-8 md:mb-0 md:pr-8">
             <img
               src={projectsImages.about}
-              classname="object-cover w-full"
+              className="object-cover w-full"
               alt="OZE Project"
             />
           </div>
           <div className="w-full h-full md:w-[60%] ">
             {
-              <p className="text-center text-lg leading-9 md:text-left text-title mb-4">
-                I am a GIS Analyst who is passionate about his work. With 5
-                years of experience in geospatial database development and
-                design, I am familiar with all phases of a GIS project.
-                Currently focused on the implementation of databases based on
-                PostgreSQL+PostGIS and automating tasks and processes in order
-                to facilitate users the interaction with the database and
-                project managers the decision making.
-                <br /> I have also worked as an electrical engineer, so I don't
-                panic if you talk to me about D-curve type magenothermal
-                switches or control relays.
-                <br /> In my spare time, apart from fishing, cycling or going to
-                concerts, I like doing research in web development (for instance
-                this web is made with React ). <br />
-                <br />
+              <p className="text-left text-lg leading-9 text-title mb-4">
+                I am a GIS and Data Analyst who is passionate about his work.
+                How can I help your company?:
+                <ul className="block">
+                  <li className="flex items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">
+                      Designing and implementating PostgreSQL/PostGIS
+                      geodatabases.
+                    </p>
+                  </li>
+                  <li className="flex items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">
+                      Automating many of your tasks.
+                    </p>
+                  </li>
+                  <li className="flex  items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">
+                      Extracting, transformating and loading from many diferente
+                      sources and formats (csv, JSON, XML, etc) into
+                      geodatabase.
+                    </p>
+                  </li>
+                  <li className="flex  items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">Developing new GIS Tools.</p>
+                  </li>
+                  <li className="flex  items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">Data Analysis with Pandas.</p>
+                  </li>
+                  <li className="flex  items-start font-medium">
+                    <VscCheck className="flex-none mr-2 mt-2" />
+                    <p className="flex-initial">
+                      Creating Dashboards with PowerBI.
+                    </p>
+                  </li>
+                </ul>
+                <br></br>
                 My tech stack:
               </p>
             }
             <ul className="flex flex-wrap items-start justify-evenly text-center md:text-left text-paragraph text-lg">
-              {skills.map((skill) => (
-                <li className="flex flex-col items-center justify-start mb-8 md:mb-6 p-4">
+              {skills.map((skill, id) => (
+                <li
+                  className="flex flex-col items-center justify-start mb-8 md:mb-6 p-4"
+                  key={id}
+                >
                   <img
                     className="w-auto h-6 object-cover"
                     src={skill.image}

@@ -1,14 +1,20 @@
 import { FaEye, FaGithub } from "react-icons/fa";
 
 const Card = ({ item, pathDemo, pathGitHub }) => {
-  const { title, image, desc } = item;
-  const notShow = [
+  const { title, image, tech } = item;
+  const notShowDemo = [
+    "Implementation of a GIS system in Renewable Energy Projects",
     "Coolfood",
     "Optical vs Radar Optical Satelite Images",
     "Web scrapping and Python analysis",
     "Power BI analysis",
     "The Power of PostgreSQL + PostGIS",
   ];
+  const notShowGithub = [
+    "Localization of plots for Renewable Energy Projects",
+    "Geologic map",
+  ];
+
   return (
     <div className="relative shadow-lg shadow-bg2 group rounded-xl max-w-[250px] min-h-[350px] flex-[45%] mb-12 md:mx-2">
       <div
@@ -27,10 +33,11 @@ const Card = ({ item, pathDemo, pathGitHub }) => {
               <h3 className="text-2xl font-bold text-white tracking-wider mb-4">
                 {title}
               </h3>
-              <span className="text-lg text-white font-semibold">{desc}</span>
+              {/* <span className="text-lg text-white font-semibold">{desc}</span> */}
+              <p className="text-base text-primary font-bold"> {tech}</p>
             </div>
             <div className="flex justify-center pt-8 text-center space-x-3 cursor-pointer text-white">
-              {notShow.indexOf(title) === -1 && (
+              {notShowDemo.indexOf(title) === -1 && (
                 <a
                   href={pathDemo}
                   target="_blank"
@@ -40,7 +47,7 @@ const Card = ({ item, pathDemo, pathGitHub }) => {
                   <FaEye size={32} />
                 </a>
               )}
-              {title !== "Geologic map" && (
+              {notShowGithub.indexOf(title) === -1 && (
                 <a
                   href={pathGitHub}
                   target="_blank"

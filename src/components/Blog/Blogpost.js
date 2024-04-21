@@ -38,7 +38,7 @@ export default function Blogpost() {
                 Humberto
               </li>
             </div>
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <a
                 href={post.netlify}
                 rel="noreferrer"
@@ -55,7 +55,7 @@ export default function Blogpost() {
               >
                 <FaGithub className="mr-2 w-6 h-6" />
               </a>
-            </div>
+            </div> */}
           </ul>
           <p className="">{post.description}</p>
         </div>

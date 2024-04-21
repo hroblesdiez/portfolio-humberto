@@ -5,8 +5,24 @@ import SectionTitle from "../General/SectionTitle";
 import ContactInfo from "./ContactInfo";
 import ContactFormInput from "./ContactFormInput";
 import Button from "../General/Button";
+import { useEffect, useState } from "react";
+
+const url = "https://ip.nf/me.json";
 
 const Contact = () => {
+  const [info, setInfo] = useState({ ip: "" });
+
+  useEffect(() => {
+    fetch(url, { method: "get" })
+      .then((res) => res.json())
+      .then((data) => {
+        setInfo({ ...data });
+      });
+  }, []);
+
+  let phone =
+    info.ip.country === "Spain" ? "+34 618 840 625" : "+48 690 620 188";
+
   return (
     <div className="w-full px-8" name="contact" id="contact">
       <div className="px-4 md:px-10 lg:px-36 py-8 md:mt-0 mb-8 md:mb-12 lg:mb-20 max-w-[900px] mx-auto bg-white rounded-lg">
@@ -21,17 +37,17 @@ const Contact = () => {
             <ContactInfo
               icon={<MdPhone size="22" />}
               title="Phone"
-              text="+48 690 620 188"
+              text={phone}
             />
             <ContactInfo
               icon={<FaTelegram size="22" />}
               title="Telegram"
-              text="+48 690 620 188"
+              text={phone}
             />
             <ContactInfo
               icon={<IoLogoWhatsapp size="22" />}
               title="Whatsapp"
-              text="+48 690 620 188"
+              text={phone}
             />
           </div>
           <div className="w-full">

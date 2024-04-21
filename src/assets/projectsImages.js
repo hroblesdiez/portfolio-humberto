@@ -13,6 +13,8 @@ import sql from "./sql.png";
 import bicilink from "./bicilink.png";
 import handball from "./handball.png";
 import mapa_geologico from "./mapa_geologico.png";
+import plots from "./plots.png";
+import earthquakes from "./earthquakes.png";
 
 const projectsImages = {
   nicePictures,
@@ -30,6 +32,8 @@ const projectsImages = {
   bicilink,
   handball,
   mapa_geologico,
+  plots,
+  earthquakes,
 };
 
 export default projectsImages;

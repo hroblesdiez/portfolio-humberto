@@ -29,8 +29,8 @@ const HomeAnimation = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "I'm a GIS Analyst",
-                    "and PostgreSQL/PostGIS apprentice",
+                    "I'm a GIS and Data Analyst",
+                    "helping companies to find the best solution",
                   ],
                   autoStart: true,
                   loop: true,
